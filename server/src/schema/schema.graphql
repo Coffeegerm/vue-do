@@ -1,0 +1,13 @@
+type Todo {
+  id: ID!
+  name: String!
+}
+
+type Query {
+  simpleMath(initialNumber: Int!): Int!
+  todos: [Todo]
+}
+
+type Mutation {
+  updateTodo(todoId: ID!, todo: String!): [Todo]
+}
