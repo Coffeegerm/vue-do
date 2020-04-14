@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <h2>Your Todos</h2>
-    <ul>
-      <li v-for="todo in todos" :key="todo.id">{{ todo.name }}</li>
+    <ul v-for="todo in todos" :key="todo.id">
+      <v-card id="todo-card">
+        <v-card-title>{{ todo.name }}</v-card-title>
+      </v-card>
     </ul>
   </div>
 </template>
@@ -25,4 +27,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+#todo-card {
+  margin: 10px 0px;
+  max-width: 98%;
+}
+</style>

@@ -1,0 +1,4 @@
+# TODO fill this to run the entirety of the applicaiton at once.
+# STEP 1: create database and expose port to server
+# STEP 2: build backend and expose port 3000 for access from front end
+# STEP 3: build front end and expose port to localhost
